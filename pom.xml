@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cloudnative</groupId>
-    <artifactId>stage</artifactId>
+    <artifactId>cloudnative</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
@@ -14,11 +14,11 @@
         <module>grpc</module>
         <module>swagger</module>
         <module>common</module>
-        <module>springclouddemo</module>
+        <!-- <module>springclouddemo</module> -->
         <module>eureka-provider</module>
-        <module>eurekaconsumer</module>
+        <module>eureka-consumer</module>
         <module>docker-provider</module>
-        <module>dockerereka</module>
+        <module>docker-eureka</module>
         <module>prometheus</module>
     </modules>
 
