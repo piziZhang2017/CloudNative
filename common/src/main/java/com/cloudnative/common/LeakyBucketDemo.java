@@ -3,11 +3,10 @@ package com.cloudnative.common;
 public class LeakyBucketDemo {
     public long timeStamp = getNowTime();
 
-
-
     public int capacity; // 桶的容量
     public int rate; // 水漏出的速度
     public int water; // 当前水量(当前累积请求数)
+
     public boolean grant() {
         long now = getNowTime();
         water = max(0, water - (now - timeStamp) * rate); // 先执行漏水，计算剩余水量

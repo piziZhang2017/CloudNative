@@ -21,9 +21,10 @@ public class GuavaLimiter {
 //        System.out.println("second time = ["+limiter.acquire(1)+"]");
 //        System.out.println("third time = ["+limiter.acquire(5)+"]");
 
-        RateLimiter limiter = RateLimiter.create(5, 1, TimeUnit.SECONDS);
-        for(int i = 0; i < 5;i++) {
-            System.out.println("i = [" + i + "] time = ["+limiter.tryAcquire(1000,TimeUnit.MILLISECONDS)+"]");
+        RateLimiter limiter = RateLimiter.create(10, 1, TimeUnit.SECONDS);
+        for(int i = 0; i < 10;i++) {
+            //System.out.println("i = [" + i + "] time = ["+limiter.tryAcquire(5,600,TimeUnit.MILLISECONDS)+"]");
+            System.out.println("i = [" + i + "] time = ["+limiter.acquire(6)+"]");
         }
     }
 }
